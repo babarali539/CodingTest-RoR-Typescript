@@ -24,7 +24,7 @@ const TodoList: React.FC<Props> = ({ todoItems }) => {
   const checkBoxOnCheck = (
     e: React.ChangeEvent<HTMLInputElement>,
     todoItemId: number
-  ): void => {
+  ): any => {
     axios.post("/todo", {
       id: todoItemId,
       checked: e.target.checked,
